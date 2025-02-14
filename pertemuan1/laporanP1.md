@@ -55,14 +55,13 @@ The solution is implemented in fungsi.java, and below is screenshot of the resul
 
 ![Screenshot](../img/p1/img4.png)
 
-**Brief explanaton:** There are 6 main step:
+**Brief explanaton:** There are 5 main step:
 
 1. Input stock for all cabang
 2. Calculate income for each cabang if all flowers sold out
 3. Print income for all cabang
-4. Input pengurangan stock for cabang 4 using negative number
-5. Calculate stock in cabang 4 after reduction
-6. Print stock for cabang 4
+4. Calculate stock in cabang 4 after reduction
+5. Print stock for cabang 4
 
 # Assignment
 

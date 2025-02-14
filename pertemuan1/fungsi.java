@@ -43,11 +43,9 @@ public class fungsi {
     }
 
     public static int[][] jumlahStockCabang4(int stokBunga[][]) {
-        System.out.println("Masukkan pengurangan stok (dalam bentuk bilangan negatif. cont: -1)");
+        int penguranganStock[] = { -1, -2, -0, -5 };
         for (int i = 0; i < stokBunga.length; i++) {
-            System.out.print("Bunga "
-                    + namaBunga[i] + ": ");
-            stokBunga[3][i] += sc.nextInt();
+            stokBunga[3][i] += penguranganStock[i];
         }
         return stokBunga;
     }
