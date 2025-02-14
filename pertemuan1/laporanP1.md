@@ -11,7 +11,7 @@
 
 The solution is implemented in pemilihan.java, and below is screenshot of the result.
 
-![Screenshot](img/p1/img1.png)
+![Screenshot](../img/p1/img1.png)
 
 **Brief explanaton:** There are 4 main step:
 
@@ -24,7 +24,7 @@ The solution is implemented in pemilihan.java, and below is screenshot of the re
 
 The solution is implemented in perulangan.java, and below is screenshot of the result.
 
-![Screenshot](img/p1/img2.png)
+![Screenshot](../img/p1/img2.png)
 
 **Brief explanaton:** There are 5 main step:
 
@@ -38,7 +38,7 @@ The solution is implemented in perulangan.java, and below is screenshot of the r
 
 The solution is implemented in array.java, and below is screenshot of the result.
 
-![Screenshot](img/p1/img3.png)
+![Screenshot](../img/p1/img3.png)
 
 **Brief explanaton:** There are 6 main step:
 
@@ -53,7 +53,7 @@ The solution is implemented in array.java, and below is screenshot of the result
 
 The solution is implemented in fungsi.java, and below is screenshot of the result.
 
-![Screenshot](img/p1/img4.png)
+![Screenshot](../img/p1/img4.png)
 
 **Brief explanaton:** There are 6 main step:
 
@@ -70,7 +70,7 @@ The solution is implemented in fungsi.java, and below is screenshot of the resul
 
 The solution is implemented in platNomor.java, and below is screenshot of the result.
 
-![Screenshot](img/p1/img5.png)
+![Screenshot](../img/p1/img5.png)
 
 **Brief explanaton:** There are 3 main step:
 
@@ -82,7 +82,7 @@ The solution is implemented in platNomor.java, and below is screenshot of the re
 
 The solution is implemented in kubusMenu.java, and below is screenshot of the result.
 
-![Screenshot](img/p1/img6.png)
+![Screenshot](../img/p1/img6.png)
 
 **Brief explanaton:** There are 3 main step:
 
@@ -95,8 +95,8 @@ The solution is implemented in kubusMenu.java, and below is screenshot of the re
 
 The solution is implemented in jadwalMatkul.java, and below is screenshot of the result.
 
-![Screenshot](img/p1/img7A.png)
-![Screenshot](img/p1/img7B.png)
+![Screenshot](../img/p1/img7A.png)
+![Screenshot](../img/p1/img7B.png)
 
 **Brief explanaton:** There are 6 main step:
 
