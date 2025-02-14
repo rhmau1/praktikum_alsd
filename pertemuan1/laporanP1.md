@@ -84,7 +84,7 @@ The solution is implemented in kubusMenu.java, and below is screenshot of the re
 
 ![Screenshot](../img/p1/img6.png)
 
-**Brief explanaton:** There are 3 main step:
+**Brief explanaton:** There are 4 main step:
 
 1. Input menu
 2. Input panjang sisi
