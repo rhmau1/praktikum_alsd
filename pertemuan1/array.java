@@ -11,7 +11,14 @@ public class array {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.print("masukkan nama matkul: ");
-            arr[i][0] = sc.nextLine();
+            String inputNamaMatkul = sc.nextLine();
+            if (inputNamaMatkul.isEmpty() || inputNamaMatkul.isBlank()) {
+                System.out.println("Nama matkul tidak boleh kosong\n INPUT ULANG");
+                i--;
+                continue;
+            } else {
+                arr[i][0] = inputNamaMatkul;
+            }
             System.out.print("masukkan nilai huruf: ");
             arr[i][1] = sc.nextLine();
             if (arr[i][1].equalsIgnoreCase("A")) {
