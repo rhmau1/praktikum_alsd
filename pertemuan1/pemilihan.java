@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pemilihan {
+public class Pemilihan {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double tugas, kuis, uts, uas, nilaiakhir;

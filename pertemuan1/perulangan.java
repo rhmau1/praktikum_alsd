@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class perulangan {
+public class Perulangan {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("masukkan nim: ");

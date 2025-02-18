@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class kubusMenu {
+public class KubusMenu {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class fungsi {
+public class Fungsi {
     static Scanner sc = new Scanner(System.in);
     static String namaBunga[] = { "Aglonema", "Keladi", "Alocasia", "Mawar" };
     static int hargaBunga[] = { 75000, 50000, 60000, 10000 };

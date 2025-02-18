@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class jadwalMatkul {
+public class JadwalMatkul {
     static Scanner sc = new Scanner(System.in);
     static String namaMatkul[], hariKuliah[];
     static int n, SKS[], semester[];
