@@ -9,7 +9,7 @@
 
 ## 2.2.1. Pemilihan
 
-The solution is implemented in pemilihan.java, and below is screenshot of the result.
+The solution is implemented in Pemilihan.java, and below is screenshot of the result.
 
 ![Screenshot](../img/p1/img1.png)
 
@@ -22,7 +22,7 @@ The solution is implemented in pemilihan.java, and below is screenshot of the re
 
 ## 2.2.1. Perulangan
 
-The solution is implemented in perulangan.java, and below is screenshot of the result.
+The solution is implemented in Perulangan.java, and below is screenshot of the result.
 
 ![Screenshot](../img/p1/img2.png)
 
@@ -36,7 +36,7 @@ The solution is implemented in perulangan.java, and below is screenshot of the r
 
 ## 2.3.1. Array
 
-The solution is implemented in array.java, and below is screenshot of the result.
+The solution is implemented in Array.java, and below is screenshot of the result.
 
 ![Screenshot](../img/p1/img3.png)
 
@@ -51,7 +51,7 @@ The solution is implemented in array.java, and below is screenshot of the result
 
 ## 2.4.1. Fungsi
 
-The solution is implemented in fungsi.java, and below is screenshot of the result.
+The solution is implemented in Fungsi.java, and below is screenshot of the result.
 
 ![Screenshot](../img/p1/img4.png)
 
@@ -67,7 +67,7 @@ The solution is implemented in fungsi.java, and below is screenshot of the resul
 
 ## 1 Kode Plat Nomor
 
-The solution is implemented in platNomor.java, and below is screenshot of the result.
+The solution is implemented in PlatNomor.java, and below is screenshot of the result.
 
 ![Screenshot](../img/p1/img5.png)
 
@@ -79,7 +79,7 @@ The solution is implemented in platNomor.java, and below is screenshot of the re
 
 ## 2 Kubus Menu
 
-The solution is implemented in kubusMenu.java, and below is screenshot of the result.
+The solution is implemented in KubusMenu.java, and below is screenshot of the result.
 
 ![Screenshot](../img/p1/img6.png)
 
@@ -92,7 +92,7 @@ The solution is implemented in kubusMenu.java, and below is screenshot of the re
 
 ## 3 Jadwal Kuliah
 
-The solution is implemented in jadwalMatkul.java, and below is screenshot of the result.
+The solution is implemented in JadwalMatkul.java, and below is screenshot of the result.
 
 ![Screenshot](../img/p1/img7A.png)
 ![Screenshot](../img/p1/img7B.png)
