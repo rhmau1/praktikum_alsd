@@ -56,6 +56,10 @@
 5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor berparameter dari class Mahasiswa!
    - ![Screenshot](../img/p2/2.png)
 
+# 2.3.1 Percobaan
+
+![Screenshot](../img/p2/5.png)
+
 # 2.4 Latihan Praktikum
 
 ## MataKuliah
