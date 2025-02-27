@@ -15,7 +15,7 @@ public class Matakuliah10 {
         this.jumlahJam = jumlahJam;
     }
 
-    public Matakuliah10 tambahData() {
+    public void tambahData() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Masukkan data mata kuliah: ");
         System.out.print("kode: ");
@@ -28,7 +28,6 @@ public class Matakuliah10 {
         System.out.print("jumlah jam: ");
         dummy = sc.nextLine();
         jumlahJam = Integer.parseInt(dummy);
-        return Matakuliah10.this;
     }
 
     public void cetakInfo() {

@@ -5,7 +5,6 @@ public class DataDosen10 {
             System.out.println("Data dosen: ");
             System.out.println("Kode: " + dosen10.kode);
             System.out.println("Nama: " + dosen10.nama);
-            System.out.println(dosen10.jenisKelamin);
             if (dosen10.jenisKelamin == true) {
                 System.out.println("Jenis Kelamin: Laki-laki");
             } else {

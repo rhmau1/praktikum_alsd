@@ -2,25 +2,7 @@ import java.util.Scanner;
 
 public class MahasiswaDemo10 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Mahasiswa10[] arrOfMahasiswa = new Mahasiswa10[3];
-        String dummy;
-
-        for (int i = 0; i < 3; i++) {
-            arrOfMahasiswa[i] = new Mahasiswa10();
-
-            System.out.println("masukkan data mahasiswa ke-" + (i + 1) + ": ");
-            System.out.print("NIM: ");
-            arrOfMahasiswa[i].nim = sc.nextLine();
-            System.out.print("Nama: ");
-            arrOfMahasiswa[i].nama = sc.nextLine();
-            System.out.print("Kelas: ");
-            arrOfMahasiswa[i].kelas = sc.nextLine();
-            System.out.print("IPK: ");
-            dummy = sc.nextLine();
-            arrOfMahasiswa[i].ipk = Float.parseFloat(dummy);
-            System.out.println("=======================");
-        }
+        // Percobaan 1
         // arrOfMahasiswa[0] = new Mahasiswa10();
         // arrOfMahasiswa[0].nim = "244107020069";
         // arrOfMahasiswa[0].nama = "Fijriati Rahmatur Rizqi";
@@ -52,7 +34,29 @@ public class MahasiswaDemo10 {
         // System.out.println("Kelas Mahasiswa: " + arrOfMahasiswa[2].kelas);
         // System.out.println("IPK Mahasiswa: " + arrOfMahasiswa[2].ipk);
 
+        // Percobaan 2
+        Scanner sc = new Scanner(System.in);
+        Mahasiswa10[] arrOfMahasiswa = new Mahasiswa10[3];
+        String dummy;
+
         for (int i = 0; i < 3; i++) {
+            arrOfMahasiswa[i] = new Mahasiswa10();
+
+            System.out.println("masukkan data mahasiswa ke-" + (i + 1) + ": ");
+            System.out.print("NIM: ");
+            arrOfMahasiswa[i].nim = sc.nextLine();
+            System.out.print("Nama: ");
+            arrOfMahasiswa[i].nama = sc.nextLine();
+            System.out.print("Kelas: ");
+            arrOfMahasiswa[i].kelas = sc.nextLine();
+            System.out.print("IPK: ");
+            dummy = sc.nextLine();
+            arrOfMahasiswa[i].ipk = Float.parseFloat(dummy);
+            System.out.println("=======================");
+        }
+
+        for (int i = 0; i < 3; i++) {
+            // tambahkan method cetak info
             arrOfMahasiswa[i].cetakInfo();
             // System.out.println("data mahasiswa ke-" + (i + 1));
             // System.out.println("NIM Mahasiswa: " + arrOfMahasiswa[i].nim);
@@ -62,11 +66,12 @@ public class MahasiswaDemo10 {
             // System.out.println("==========");
         }
 
-        Mahasiswa10[] myArrayOMahasiswa = new Mahasiswa10[3];
-        myArrayOMahasiswa[0].nim = "244107020079";
-        myArrayOMahasiswa[0].nama = "Test";
-        myArrayOMahasiswa[0].kelas = "TI 1G";
-        myArrayOMahasiswa[0].ipk = (float) 3.75;
+        // Error karena belum membuat objek langsung mengisi atribut
+        // Mahasiswa10[] myArrayOMahasiswa = new Mahasiswa10[3];
+        // myArrayOMahasiswa[0].nim = "244107020079";
+        // myArrayOMahasiswa[0].nama = "Test";
+        // myArrayOMahasiswa[0].kelas = "TI 1G";
+        // myArrayOMahasiswa[0].ipk = (float) 3.75;
 
     }
 }
