@@ -15,7 +15,7 @@ hasil percobaan dapat dilihat pada gambar di bawah ini:
 
 1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki
    atribut dan sekaligus method? Jelaskan!
-   - Tidak harus selalu memiliki method namun tetap memiliki atribut
+   - Tidak harus selalu memiliki method dan atribut
 2. Apa yang dilakukan oleh kode program berikut?
    - Kode tersebut yaitu membuat array dari object mahasiswa
 3. Apakah class Mahasiswa memiliki konstruktor? Jika tidak, kenapa bisa dilakukan pemanggilan
