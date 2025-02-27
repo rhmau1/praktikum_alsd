@@ -22,7 +22,7 @@ hasil percobaan dapat dilihat pada gambar di bawah ini:
    konstruktur pada baris program berikut?
    - Karena meskipun class tersebut tidak mendeklarasikan sebuah konstruktor, sebuah class sudah memiliki default konstruktor yang tidak berparameter
 4. Apa yang dilakukan oleh kode program berikut?
-   - Kode tersebut melakukan instansiasi objek mahasiswa dan mengisi value terhadap objeknya
+   - Kode tersebut melakukan instansiasi objek mahasiswa dan mengisi value terhadap atribut objeknya
 5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2?
    - Karena pada java tidak bisa membuat 2 class di dalam 1 file yang sama
 
