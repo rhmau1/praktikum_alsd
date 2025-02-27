@@ -1,4 +1,14 @@
 public class DataDosen10 {
+
+    // Dosen10 dosen[] = new Dosen10[2];
+
+    // void inputSemua() {
+    // for (int i = 0; i < dosen.length; i++) {
+    // dosen[i] = new Dosen10();
+    // dosen[i].inputDosen();
+    // }
+    // }
+
     void dataSemuaDosen(Dosen10[] arrDosen10) {
         for (Dosen10 dosen10 : arrDosen10) {
             System.out.println("==============================================");

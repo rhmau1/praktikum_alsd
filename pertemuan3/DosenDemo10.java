@@ -47,6 +47,7 @@ public class DosenDemo10 {
         System.out.println("==============================================");
         System.out.println("Memanggil method dari class DataDosen10");
         DataDosen10 dataDosen10 = new DataDosen10();
+        // dataDosen10.inputSemua();
         dataDosen10.dataSemuaDosen(arrOfDosen);
         dataDosen10.dataDosenPerjenisKelamin(arrOfDosen);
         dataDosen10.rerataUsiaDosenPerjenisKelamin(arrOfDosen);
