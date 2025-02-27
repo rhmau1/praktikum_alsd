@@ -15,7 +15,7 @@ public class DataDosen10 {
             System.out.println("Data dosen: ");
             System.out.println("Kode: " + dosen10.kode);
             System.out.println("Nama: " + dosen10.nama);
-            if (dosen10.jenisKelamin == true) {
+            if (dosen10.jenisKelamin) {
                 System.out.println("Jenis Kelamin: Laki-laki");
             } else {
                 System.out.println("Jenis Kelamin: Perempuan");
@@ -28,7 +28,7 @@ public class DataDosen10 {
         int jumlahPria = 0;
         int jumlahWanita = 0;
         for (Dosen10 dosen10 : arrDosen10) {
-            if (dosen10.jenisKelamin == true) {
+            if (dosen10.jenisKelamin) {
                 jumlahPria++;
 
             } else {
@@ -46,7 +46,7 @@ public class DataDosen10 {
         double usiaPria = 0;
         double usiaWanita = 0;
         for (Dosen10 dosen10 : arrDosen10) {
-            if (dosen10.jenisKelamin == true) {
+            if (dosen10.jenisKelamin) {
                 usiaPria += dosen10.usia;
                 jumlahPria++;
             } else {

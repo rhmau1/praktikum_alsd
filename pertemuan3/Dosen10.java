@@ -4,7 +4,7 @@ public class Dosen10 {
     String kode, nama, dummy;
     boolean jenisKelamin;
     int usia;
-    Scanner sc = new Scanner(System.in);
+    // Scanner sc = new Scanner(System.in);
 
     public Dosen10() {
     }
