@@ -67,22 +67,42 @@ public class DataDosen10 {
     }
 
     void infoDosenTertua(Dosen10[] arrDosen10) {
+        int index = 0;
         int tertua = arrDosen10[0].usia;
         for (int i = 1; i < arrDosen10.length; i++) {
             if (arrDosen10[i].usia > tertua) {
                 tertua = arrDosen10[i].usia;
+                index = i;
             }
         }
         System.out.println("usia dosen tertua adalah: " + tertua);
+        System.out.println("data dosen tertua: ");
+        System.out.println("Kode: " + arrDosen10[index].kode);
+        System.out.println("Nama: " + arrDosen10[index].nama);
+        if (arrDosen10[index].jenisKelamin) {
+            System.out.println("Jenis Kelamin: Laki-laki");
+        } else {
+            System.out.println("Jenis Kelamin: Perempuan");
+        }
     }
 
     void infoDosenTermuda(Dosen10[] arrDosen10) {
+        int index = 0;
         int termuda = arrDosen10[0].usia;
         for (int i = 1; i < arrDosen10.length; i++) {
             if (arrDosen10[i].usia < termuda) {
                 termuda = arrDosen10[i].usia;
+                index = i;
             }
         }
         System.out.println("usia dosen termuda adalah: " + termuda);
+        System.out.println("data dosen termuda: ");
+        System.out.println("Kode: " + arrDosen10[index].kode);
+        System.out.println("Nama: " + arrDosen10[index].nama);
+        if (arrDosen10[index].jenisKelamin) {
+            System.out.println("Jenis Kelamin: Laki-laki");
+        } else {
+            System.out.println("Jenis Kelamin: Perempuan");
+        }
     }
 }
