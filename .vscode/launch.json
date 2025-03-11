@@ -1,112 +1,140 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Array",
-            "request": "launch",
-            "mainClass": "Array",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "DosenDemo10",
-            "request": "launch",
-            "mainClass": "DosenDemo10",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "Fungsi",
-            "request": "launch",
-            "mainClass": "Fungsi",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "JadwalMatkul",
-            "request": "launch",
-            "mainClass": "JadwalMatkul",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "KubusMenu",
-            "request": "launch",
-            "mainClass": "KubusMenu",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "MahasiswaDemo10",
-            "request": "launch",
-            "mainClass": "MahasiswaDemo10",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "MatakuliahDemo10",
-            "request": "launch",
-            "mainClass": "MatakuliahDemo10",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "Pemilihan",
-            "request": "launch",
-            "mainClass": "Pemilihan",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "Perulangan",
-            "request": "launch",
-            "mainClass": "Perulangan",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "PlatNomor",
-            "request": "launch",
-            "mainClass": "PlatNomor",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "SmartHomeMain",
-            "request": "launch",
-            "mainClass": "kuis1.SmartHomeMain",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "DosenMain10",
-            "request": "launch",
-            "mainClass": "pertemuan2.DosenMain10",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "MahasiswaMain10",
-            "request": "launch",
-            "mainClass": "pertemuan2.MahasiswaMain10",
-            "projectName": "praktikum_alsd_ecf066cd"
-        },
-        {
-            "type": "java",
-            "name": "MataKuliahMain10",
-            "request": "launch",
-            "mainClass": "pertemuan2.MataKuliahMain10",
-            "projectName": "praktikum_alsd_ecf066cd"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "NilaiMhs",
+      "request": "launch",
+      "mainClass": "pertemuan5.NilaiMhs",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "MainSum",
+      "request": "launch",
+      "mainClass": "pertemuan5.MainSum",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "MainPangkat",
+      "request": "launch",
+      "mainClass": "pertemuan5.MainPangkat",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "MainFaktorial",
+      "request": "launch",
+      "mainClass": "pertemuan5.MainFaktorial",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Array",
+      "request": "launch",
+      "mainClass": "Array",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "DosenDemo10",
+      "request": "launch",
+      "mainClass": "DosenDemo10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "Fungsi",
+      "request": "launch",
+      "mainClass": "Fungsi",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "JadwalMatkul",
+      "request": "launch",
+      "mainClass": "JadwalMatkul",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "KubusMenu",
+      "request": "launch",
+      "mainClass": "KubusMenu",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "MahasiswaDemo10",
+      "request": "launch",
+      "mainClass": "MahasiswaDemo10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "MatakuliahDemo10",
+      "request": "launch",
+      "mainClass": "MatakuliahDemo10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "Pemilihan",
+      "request": "launch",
+      "mainClass": "Pemilihan",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "Perulangan",
+      "request": "launch",
+      "mainClass": "Perulangan",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "PlatNomor",
+      "request": "launch",
+      "mainClass": "PlatNomor",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "SmartHomeMain",
+      "request": "launch",
+      "mainClass": "kuis1.SmartHomeMain",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "DosenMain10",
+      "request": "launch",
+      "mainClass": "pertemuan2.DosenMain10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "MahasiswaMain10",
+      "request": "launch",
+      "mainClass": "pertemuan2.MahasiswaMain10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "MataKuliahMain10",
+      "request": "launch",
+      "mainClass": "pertemuan2.MataKuliahMain10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    }
+  ]
 }
