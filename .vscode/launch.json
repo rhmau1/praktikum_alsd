@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Tugas",
+      "request": "launch",
+      "mainClass": "pertemuan5.Tugas",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
       "name": "NilaiMhs",
       "request": "launch",
       "mainClass": "pertemuan5.NilaiMhs",

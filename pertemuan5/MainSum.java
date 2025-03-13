@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class MainSum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("masukkan jumlah elemen: ");
+        System.out.print("masukkan jumlah elemen: ");
         int elemen = input.nextInt();
 
         Sum sm = new Sum(elemen);
         for (int i = 0; i < elemen; i++) {
-            System.out.println("masukkan keuntungan ke-" + (i + 1) + ": ");
+            System.out.print("masukkan keuntungan ke-" + (i + 1) + ": ");
             sm.keuntungan[i] = input.nextDouble();
         }
 

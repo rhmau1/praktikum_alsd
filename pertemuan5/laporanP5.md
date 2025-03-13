@@ -5,6 +5,12 @@
 | Kelas      | TI - 1H                                           |
 | Repository | [link] (https://github.com/rhmau1/praktikum_alsd) |
 
+# 5.2.1 Percobaan
+
+hasil percobaan dapat dilihat pada gambar di bawah ini:
+
+- ![Screenshot](../img/p5/2.png)
+
 # 5.2.3 Pertanyaan
 
 1. Pada base line Algoritma Divide Conquer untuk melakukan pencarian nilai faktorial, jelaskan perbedaan bagian kode pada penggunaan if dan else!
@@ -20,11 +26,17 @@
     }
     return fakto;
    ```
-3. Jelaskan perbedaan antara fakto _= i; dan int fakto = n _ faktorialDC(n-1); !
+3. Jelaskan perbedaan antara fakto \*= i; dan int fakto = n \* faktorialDC(n-1); !
    - fakto \*= i dilakukan dalam perulangan mulai nilai 1 sampai n yang menggunakan pendekatan brute force
    - fakto = n \* faktorialDC(n-1) adalah pemanggilan rekursif, pemanggilan akan terus dilakukan sampai nilai n == 1, apabila belum terpenuhi maka akan memanggil diri sendiri lagi namun dengan mengirimkan parameter yang berbeda yaitu nilai n-1
 4. Buat Kesimpulan tentang perbedaan cara kerja method faktorialBF() dan faktorialDC()!
    - cara kerja faktorialBF menggunakan pendekatan brute force dimana akan melakukan pengulangan untuk semua data dimulai dari data awal sampai data akhir sampai hasil akhirnya ditemukan, cara kerja faktorialDC menggunakan pendekatan divide and conquer dimana menggunakan cara memecah nilai n menjadi nilai yang lebih kecil ditunjukkan dengan kode ketika dalam pemanggilan fungsi rekursif nilai n akan dipecah menjadi kecil dengan mengirimkan parameter n-1
+
+# 5.3.1 Percobaan
+
+hasil percobaan dapat dilihat pada gambar di bawah ini:
+
+- ![Screenshot](../img/p5/3.png)
 
 # 5.3.3 Pertanyaan
 
@@ -47,21 +59,34 @@
    - pangkatBF menggunakan pendekatan brute force akan mengkalikan hasil dengan nilai mulai i = 0 sampai i < pangkat
    - pangkatDC menggunakan pendekatan divide conquer akan memecah nilai n sampai mencapai best case apabila n == 1 maka akan return a apabila tidak maka akan menjalankan kode else lalu melakukan pengecekan apakah nilai n ganjil atau genap, apabila ganjil maka akan menjalankan kode pemanggilan dua kali fungsi rekursif dengan mengirimkan nilai a dan nilai n/2 sebagai parameter lalu dikali a, namun jika nilai n genap maka hanya melakukan dua kali fungsi rekursif dengan mengirimkan nilai a dan nilai n/2 sebagai parameter
 
+# 5.4.1 Percobaan
+
+hasil percobaan dapat dilihat pada gambar di bawah ini:
+
+- ![Screenshot](../img/p5/4.png)
+
 # 5.4.3 Pertanyaan
 
 1. Kenapa dibutuhkan variable mid pada method TotalDC()?
-   - sebagai nilai tengah untuk patokan data untuk memecah menjadi nilai yang lebih kecil untuk dihitung dipisah menjadi data sebelah kanan dan kiri dari nilai mid
+   - sebagai nilai tengah, membagi seluruh data menjadi 2, untuk patokan data untuk memecah menjadi nilai yang lebih kecil untuk dihitung dipisah menjadi data sebelah kanan dan kiri dari nilai mid
 2. Untuk apakah statement di bawah ini dilakukan dalam TotalDC()?
    - untuk menghitung jumlah sebelah kanan lalu disimpan di rsum, dan menghitung jumlah sebelah kiri lalu disimpan di lsum
 3. Kenapa diperlukan penjumlahan hasil lsum dan rsum seperti di bawah ini?
    - karena awalnya dipecah menjadi 2 bagian yaitu kanan dan kiri, untuk mendapatkan hasil totalnya maka harus menjumlahkan keduanya
 4. Apakah base case dari totalDC()?
-   - base case nya adalah ketika nilai kanan == kiri maka akan mengembalikan value dari array[kiri] atau bisa juga array[kanan] karena sama saja, namun lebih umum menggunakan yang kiri karena bagian awal array
+   - base case nya adalah ketika nilai l == r maka akan mengembalikan value dari array indeks l
 5. Tarik Kesimpulan tentang cara kerja totalDC()
-   - cara kerjanya pertama akan melakukan pengecekan terlebih dahulu apakah nilai l == r apabila iya maka akan return value dari array indeks ke l, apabila tidak maka akan masuk ke bagian kode else lalu akan mencari nilai mid dari data, setelah itu akan dibagi menjadi bagian kanan dan kiri, lalu melakukan pemanggilan fungsi rekursif untuk bagian kanan akan mengirimkan parameter berupa array aslinya, nilai l awal sebagai parameter l, lalu nilai mid sebagai parameter r. untuk bagian kiri maka akan melakukan fungsi rekursif untuk bagian kiri akan mengirimkan parameter berupa array aslinya, nilai mid+1 sebagai parameter l, lalu nilai r awal sebagai parameter r
+   - method totalDC akan menjumlahkan seluruh data dari array dengan menggunakan pendekatan divide and conquer, pertama akan melakukan pengecekan apakah nilai l == r, jika iya maka akan mengembalikan value array indeks ke l. Apabila tidak akan menjalankan kode untuk menentukan value dari variable mid. Lalu akan melakukan pemanggilan fungsi rekursif untuk variable lsum dan rsum. Setelah proses recursion call menemui best case maka hasilnya akan di combine dan di return lsum + rsum
+   - ada parameter l dan r yang akan menentukan data mana yang akan diolah dalam fungsi tersebut. L indeks sebelah kiri, R indeks sebelah kanan.
+     lsum menghitung data dari indeks L sampai indeks mid
+     rsum menghitung data dari indeks mid+1 sampai R
+     Kita tidak memecah array secara fisik, namun saat pengolahan yang dibatasi indeksnya
 
 # 4.5 Latihan praktikum
 
 1. Nilau UTS tertinggi tertinggi menggunakan Divide and Conquer!
 2. Nilai UTS terendah menggunakan Divide and Conquer!
 3. Rata-rata nilai UAS dari semua mahasiswa menggunakan Brute Force!
+
+- Hasil diimplementasikan di Tugas.java
+  - ![Screenshot](../img/p5/1.png)

@@ -20,6 +20,7 @@ public class Pangkat {
         if (n == 1) {
             return a;
         } else {
+            // return a * pangkatDC(a, n - 1);
             if (n % 2 == 1) {
                 return (pangkatDC(a, n / 2) * pangkatDC(a, n / 2) * a);
             } else {
