@@ -1,3 +1,5 @@
+package pertemuan3;
+
 public class DataDosen10 {
 
     // Dosen10 dosen[] = new Dosen10[2];

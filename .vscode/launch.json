@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DosenDemo",
+      "request": "launch",
+      "mainClass": "pertemuan6.DosenDemo",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "MahasiswaDemo10",
+      "request": "launch",
+      "mainClass": "pertemuan6.MahasiswaDemo10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "SortingMain10",
+      "request": "launch",
+      "mainClass": "SortingMain10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
       "name": "Tugas",
       "request": "launch",
       "mainClass": "pertemuan5.Tugas",

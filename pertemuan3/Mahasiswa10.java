@@ -1,3 +1,5 @@
+package pertemuan3;
+
 public class Mahasiswa10 {
     public String nim, nama, kelas;
     public float ipk;
