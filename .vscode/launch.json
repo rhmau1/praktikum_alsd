@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MahasiswaDemo10",
+      "request": "launch",
+      "mainClass": "pertemuan7.MahasiswaDemo10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
       "name": "SortingMain10",
       "request": "launch",
       "mainClass": "pertemuan6.SortingMain10",

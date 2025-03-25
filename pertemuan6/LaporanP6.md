@@ -25,7 +25,14 @@ hasil percobaan dapat dilihat pada gambar di bawah ini:
            }
    ```
 3. Pada Insertion sort , jelaskan maksud dari kondisi pada perulangan
-   - kode tersebut akan melakukan perulangan selama nilai j saat ini >= 0 dan value data indeks ke j lebih besar daripada value dari temp
+   - kode tersebut akan melakukan perulangan selama nilai j saat ini >= 0 dan value data indeks ke j lebih besar daripada value dari temp.
+     pada insertion sort maka dibagi dua bagian sorted dan unsorted.
+     bagian kiri yang sorted.
+     yang tidak terurut diambil satu persatu lalu dibandingkan untuk disisipkan di bagian yang terurut ke posisi yang benar.
+     while menentukan kapan kita harus geser.
+     j untuk mengambil data2 yang mau dibandingkan.
+     i untuk mengambil key temp.
+     digunakan untuk memastikan atau seleksi kapan data harus digeser ke kanan pada saat mau menyisipkan data dari bagian yang tidak urut ke bagian yang terurut.
 4. Pada Insertion sort, apakah tujuan dari perintah
    - tujuannya adalah untuk mengisi value dari data disebelah kanan dengan value data saat ini
 
