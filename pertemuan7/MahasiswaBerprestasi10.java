@@ -1,8 +1,12 @@
 package pertemuan7;
 
 public class MahasiswaBerprestasi10 {
-    Mahasiswa10[] listMhs = new Mahasiswa10[5];
+    Mahasiswa10[] listMhs;
     int idx;
+
+    MahasiswaBerprestasi10(int n) {
+        listMhs = new Mahasiswa10[n];
+    }
 
     void tambah(Mahasiswa10 m) {
         if (idx < listMhs.length) {
@@ -51,6 +55,7 @@ public class MahasiswaBerprestasi10 {
     }
 
     int findBinarySearch(double cari, int left, int right) {
+        selectionSort();
         int mid;
         if (right >= left) {
             mid = (left + right) / 2;

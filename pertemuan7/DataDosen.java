@@ -1,8 +1,12 @@
 package pertemuan7;
 
 public class DataDosen {
-    Dosen[] dataDosen = new Dosen[10];
+    Dosen[] dataDosen;
     int idx;
+
+    DataDosen(int n) {
+        dataDosen = new Dosen[n];
+    }
 
     void tambah(Dosen dsn) {
         if (idx < dataDosen.length) {
@@ -20,42 +24,6 @@ public class DataDosen {
         }
     }
 
-    // int jumlahPencarianDataSequential10(String cari) {
-    // int count = 0;
-    // for (int j = 0; j < dataDosen.length; j++) {
-    // if (dataDosen[j].nama.equalsIgnoreCase(cari)) {
-    // count++;
-    // }
-    // }
-    // if (count > 1) {
-    // System.out.println("data yang sesuai dengan hasil pencarian > 1");
-    // }
-    // return count;
-    // }
-
-    // int[] pencarianDataSequential10(int count, String cari) {
-    // int posisi[] = new int[count];
-    // int idx = 0;
-    // for (int i = 0; i < dataDosen.length; i++) {
-    // if (dataDosen[i].nama.equalsIgnoreCase(cari)) {
-    // posisi[idx] = i;
-    // idx++;
-    // }
-    // }
-    // return posisi;
-    // }
-
-    // void tampilPosisi(String cari, int[] pos) {
-    // if (pos.length != 0) {
-    // for (int i = 0; i < pos.length; i++) {
-    // System.out.println("data dosen dengan nama: " + cari + " ditemukan pada
-    // indeks " + pos[i]);
-    // }
-    // } else {
-    // System.out.println("data " + cari + " tidak ditemukan");
-    // }
-    // }
-
     int pencarianDataSequential10(String cari) {
         int posisi = -1;
         int count = 0;
@@ -64,35 +32,56 @@ public class DataDosen {
             if (dataDosen[i].nama.equalsIgnoreCase(cari)) {
                 posisi = i;
                 count++;
+                System.out.println("data dosen bernama " + cari + " ditemukan pada indeks " + i);
+                dataDosen[i].tampil();
+                System.out.println("=================================================");
             }
         }
         if (count > 1) {
             System.out.println("PERINGATAN!\ndata yang sesuai dengan hasil pencarian ada lebih dari 1");
+            System.out.println("ada " + count + " data dosen yang bernama " + cari);
         }
         return posisi;
     }
 
     void tampilPosisi(String cari, int pos) {
         if (pos != -1) {
-            System.out.println("data dosen dengan nama: " + cari + " ditemukan pada indeks " + pos);
+            System.out.println("data dosen " + cari + " ditemukan pada indeks " + pos);
         } else {
             System.out.println("data " + cari + " tidak ditemukan");
         }
     }
 
-    int pencarianDataBinary10(int cari, int right, int left) {
+    int pencarianDataBinary10(int cari, int left, int right) {
+        insertionSort();
         int mid;
-        if (right >= left) {
+        int count = 0;
+        int posisi = -1;
+
+        while (right >= left) {
             mid = (left + right) / 2;
             if (cari == dataDosen[mid].usia) {
-                return mid;
+                for (int i = 0; i < dataDosen.length; i++) {
+                    if (cari == dataDosen[i].usia) {
+                        count++;
+                        posisi = i;
+                        System.out.println("data dosen berusia " + cari + " ditemukan pada indeks " + i);
+                        dataDosen[i].tampil();
+                        System.out.println("=================================================");
+                    }
+                }
+                break;
             } else if (dataDosen[mid].usia > cari) { // data urut desc pakai tanda <, jika asc pakai tanda >
                 return pencarianDataBinary10(cari, left, mid - 1);
             } else {
                 return pencarianDataBinary10(cari, mid + 1, right);
             }
         }
-        return -1;
+        if (count > 1) {
+            System.out.println("PERINGATAN!\ndata yang sesuai dengan hasil pencarian ada lebih dari 1");
+            System.out.println("ada " + count + " data dosen yang berusia " + cari);
+        }
+        return posisi;
     }
 
     void sortingASC() {
