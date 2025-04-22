@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "Test",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "Siakad",
+      "request": "launch",
+      "mainClass": "Siakad",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
       "name": "DosenDemo",
       "request": "launch",
       "mainClass": "pertemuan7.DosenDemo",
