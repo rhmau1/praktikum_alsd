@@ -42,7 +42,7 @@ public class StackSurat10 {
         if (!isEmpty()) {
             return stack[top];
         } else {
-            System.out.println("Stack kosong! tidak ada tugas yang dikumpulkan");
+            System.out.println("Stack kosong! tidak ada surat yang dikumpulkan");
             return null;
         }
     }
@@ -50,9 +50,9 @@ public class StackSurat10 {
     void sequentialSearching(String cari) {
         boolean found = false;
         for (int i = 0; i <= top; i++) {
-            if (stack[i].namaMahasiswa.equalsIgnoreCase(cari)) {
-                stack[i].cetakSurat();
+            if (stack[i].namaMahasiswa.toLowerCase().contains(cari)) {
                 System.out.println("------------------------");
+                stack[i].cetakSurat();
                 found = true;
             }
         }

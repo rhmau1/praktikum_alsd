@@ -52,7 +52,7 @@ public class SuratDemo10 {
                 case 4:
                     System.out.print("masukkan nama mahasiswa yang dicari: ");
                     String cari = sc.nextLine();
-                    stack.sequentialSearching(cari);
+                    stack.sequentialSearching(cari.toLowerCase());
                     break;
                 default:
                     System.out.println("Pilihan tidak valid");
