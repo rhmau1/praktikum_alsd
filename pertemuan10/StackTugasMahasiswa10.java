@@ -72,7 +72,7 @@ public class StackTugasMahasiswa10 {
             return top + 1;
         } else {
             System.out.println("Belum ada tugas yang dikumpulkan");
-            return -1;
+            return 0;
         }
     }
 
