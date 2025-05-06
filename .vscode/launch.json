@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "QueueMain",
+      "request": "launch",
+      "mainClass": "QueueMain",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
       "name": "SuratDemo10",
       "request": "launch",
       "mainClass": "pertemuan10.SuratDemo10",
