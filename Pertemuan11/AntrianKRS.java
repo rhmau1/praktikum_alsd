@@ -45,50 +45,48 @@ public class AntrianKRS {
         }
     }
 
-    public void layaniMahasiswa() {
+    public Mahasiswa[] layaniMahasiswa() {
+        Mahasiswa[] arrMhs;
         if (isEmpty()) {
             System.out.println("antrian masih kosong");
+            return null;
         } else {
             System.out.println("Melayani KRS 2 mahasiswa terdepan: ");
-            if (size < 2) {
-                for (int i = 0; i < size; i++) {
-                    Mahasiswa tmp = data[front];
-                    System.out.println(
-                            (i + 1) + ". " + tmp.nim + " - " + tmp.nama + " - " + tmp.prodi + " - " + tmp.kelas);
+            if (size == 1) {
+                arrMhs = new Mahasiswa[1];
+                arrMhs[0] = data[front];
+                sudahKRS++;
+                front = (front + 1) % max;
+                size--;
+            } else {
+                arrMhs = new Mahasiswa[2];
+                for (int i = 0; i < 2; i++) {
+                    arrMhs[i] = data[front];
                     sudahKRS++;
                     front = (front + 1) % max;
                     size--;
                 }
-                return;
             }
-            for (int i = 0; i < 2; i++) {
-                Mahasiswa tmp = data[front];
-                System.out.println((i + 1) + ". " + tmp.nim + " - " + tmp.nama + " - " + tmp.prodi + " - " + tmp.kelas);
-                sudahKRS++;
-                front = (front + 1) % max;
-                size--;
-            }
+            return arrMhs;
         }
     }
 
     public void tampilkanDuaTerdepan() {
+        Mahasiswa[] arrMhs;
         if (isEmpty()) {
             System.out.println("antrian masih kosong");
         } else {
             System.out.println("Tampilkan 2 mahasiswa terdepan: ");
-            if (size < 2) {
-                for (int i = 0; i < size; i++) {
-                    Mahasiswa tmp = data[front];
-                    System.out.println(
-                            (i + 1) + ". " + tmp.nim + " - " + tmp.nama + " - " + tmp.prodi + " - " + tmp.kelas);
-                    front = (front + 1) % max;
+            if (size == 1) {
+                arrMhs = new Mahasiswa[1];
+                arrMhs[0] = data[front];
+                arrMhs[0].tampilkanData();
+            } else {
+                arrMhs = new Mahasiswa[2];
+                for (int i = 0; i < 2; i++) {
+                    arrMhs[i] = data[front + i];
+                    arrMhs[i].tampilkanData();
                 }
-                return;
-            }
-            for (int i = 0; i < 2; i++) {
-                Mahasiswa tmp = data[front];
-                System.out.println((i + 1) + ". " + tmp.nim + " - " + tmp.nama + " - " + tmp.prodi + " - " + tmp.kelas);
-                front = (front + 1) % max;
             }
         }
     }

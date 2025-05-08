@@ -35,7 +35,12 @@ public class LayananKRSMain {
                     antrian.tambahAntrian(mhs);
                     break;
                 case 2:
-                    antrian.layaniMahasiswa();
+                    Mahasiswa[] dilayani = antrian.layaniMahasiswa();
+                    if (dilayani != null) {
+                        for (int i = 0; i < dilayani.length; i++) {
+                            dilayani[i].tampilkanData();
+                        }
+                    }
                     break;
                 case 3:
                     antrian.tampilkanDuaTerdepan();
