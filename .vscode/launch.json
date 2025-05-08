@@ -8,6 +8,27 @@
       "type": "java",
       "name": "QueueMain",
       "request": "launch",
+      "mainClass": "Pertemuan11.QueueMain",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "LayananAkademikSIAKAD",
+      "request": "launch",
+      "mainClass": "Pertemuan11.LayananAkademikSIAKAD",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "LayananKRSMain",
+      "request": "launch",
+      "mainClass": "Pertemuan11.LayananKRSMain",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "QueueMain",
+      "request": "launch",
       "mainClass": "QueueMain",
       "projectName": "praktikum_alsd_ecf066cd"
     },

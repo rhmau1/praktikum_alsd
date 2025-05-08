@@ -7,8 +7,8 @@ public class AntrianLayanan {
     public AntrianLayanan(int n) {
         max = n;
         data = new Mahasiswa[max];
-        size = 0;
-        front = rear = -1;
+        size = front = 0;
+        rear = -1;
     }
 
     public boolean isEmpty() {
@@ -57,6 +57,16 @@ public class AntrianLayanan {
             System.out.println("mahasiswa terdepan: ");
             System.out.println("NIM - NAMA - PRODI - KELAS");
             data[front].tampilkanData();
+        }
+    }
+
+    public void lihatAkhir() {
+        if (isEmpty()) {
+            System.out.println("antrian kosong");
+        } else {
+            System.out.println("mahasiswa terbelakang: ");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
         }
     }
 

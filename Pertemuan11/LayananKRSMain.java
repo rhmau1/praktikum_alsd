@@ -2,20 +2,21 @@ package Pertemuan11;
 
 import java.util.Scanner;
 
-public class LayananAkademikSIAKAD {
+public class LayananKRSMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        AntrianLayanan antrian = new AntrianLayanan(5);
+        AntrianKRS antrian = new AntrianKRS();
         int pilihan;
-
         do {
-            System.out.println("\n== MENU ANTRIAN LAYANAN AKADEMIK ==");
+            System.out.println("\n== MENU ANTRIAN KRS ==");
             System.out.println("1. tambah mahasiswa ke antrian");
             System.out.println("2. layani mahasiswa");
-            System.out.println("3. lihat mahasiswa terdepan");
+            System.out.println("3. tampilkan dua antrian terdepan");
             System.out.println("4. lihat semua antrian");
             System.out.println("5. jumlah mahasiswa dalam antrian");
             System.out.println("6. cek antrian paling belakang");
+            System.out.println("7. jumlah mahasiswa sudah KRS");
+            System.out.println("8. jumlah mahasiswa belum KRS");
             System.out.println("0. keluar");
             System.out.print("pilih menu: ");
             pilihan = sc.nextInt();
@@ -34,14 +35,10 @@ public class LayananAkademikSIAKAD {
                     antrian.tambahAntrian(mhs);
                     break;
                 case 2:
-                    Mahasiswa dilayani = antrian.layaniMahasiswa();
-                    if (dilayani != null) {
-                        System.out.print("melayani mahasiswa: ");
-                        dilayani.tampilkanData();
-                    }
+                    antrian.layaniMahasiswa();
                     break;
                 case 3:
-                    antrian.lihatTerdepan();
+                    antrian.tampilkanDuaTerdepan();
                     break;
                 case 4:
                     antrian.tampilkanSemua();
@@ -51,6 +48,12 @@ public class LayananAkademikSIAKAD {
                     break;
                 case 6:
                     antrian.lihatAkhir();
+                    break;
+                case 7:
+                    System.out.println("jumlah mahasiswa sudah KRS: " + antrian.getJumlahSudahKRS());
+                    break;
+                case 8:
+                    System.out.println("jumlah mahasiswa belum KRS: " + antrian.getJumlahBelumKRS());
                     break;
                 case 0:
                     System.out.println("terimakasih");

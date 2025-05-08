@@ -1,4 +1,5 @@
 package Pertemuan11;
+
 import java.util.Scanner;
 
 public class QueueMain {
@@ -14,7 +15,7 @@ public class QueueMain {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("masukkan kapasitas queue: ");
+        System.out.print("masukkan kapasitas queue: ");
         int n = sc.nextInt();
         Queue Q = new Queue(n);
         int pilih;
@@ -23,15 +24,25 @@ public class QueueMain {
             pilih = sc.nextInt();
             switch (pilih) {
                 case 1:
-                    System.out.println("masukkan data baru");
+                    System.out.print("masukkan data baru: ");
                     int dataMasuk = sc.nextInt();
-                    Q.enqueue(dataMasuk);
+                    if (Q.isFull()) {
+                        System.out.println("Queue sudah penuh");
+                        return;
+                    } else {
+                        Q.enqueue(dataMasuk);
+                    }
                     break;
                 case 2:
-                    int dataKeluar = Q.dequeue();
-                    if (dataKeluar != 0) {
-                        System.out.println("Data yang dikeluarkan: " + dataKeluar);
-                        break;
+                    if (Q.isEmpty()) {
+                        System.out.println("Queue masih kosong");
+                        return;
+                    } else {
+                        int dataKeluar = Q.dequeue();
+                        if (dataKeluar != 0) {
+                            System.out.println("Data yang dikeluarkan: " + dataKeluar);
+                            break;
+                        }
                     }
                     break;
                 case 3:
