@@ -52,3 +52,9 @@ Lakukan modifikasi program dengan menambahkan method baru bernama LihatAkhir pad
 # Tugas
 
 Hasil diimplementasikan di class Mahasiswa.java, AntrianKRS.java, dan LayananKRSMain.java
+
+- ![Screenshot](../img/p11/5A.png)
+- ![Screenshot](../img/p11/5B.png)
+- ![Screenshot](../img/p11/5C.png)
+- ![Screenshot](../img/p11/5D.png)
+- ![Screenshot](../img/p11/5E.png)
