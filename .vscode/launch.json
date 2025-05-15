@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AntrianMain",
+      "request": "launch",
+      "mainClass": "pertemuan12.AntrianMain",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "SLLMain10",
+      "request": "launch",
+      "mainClass": "pertemuan12.SLLMain10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
       "name": "QueueMain",
       "request": "launch",
       "mainClass": "Pertemuan11.QueueMain",
