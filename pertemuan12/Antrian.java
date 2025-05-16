@@ -2,6 +2,17 @@ package pertemuan12;
 
 public class Antrian {
     NodeMahasiswa10 head, tail;
+    int maks;
+
+    Antrian(int max) {
+        maks = max;
+        head = null;
+        tail = null;
+    }
+
+    boolean isFull() {
+        return (getSize() == maks);
+    }
 
     boolean isEmpty() {
         return (head == null);
@@ -23,14 +34,18 @@ public class Antrian {
     }
 
     public void addLast(Mahasiswa10 input) {
-        NodeMahasiswa10 ndInput = new NodeMahasiswa10(input, null);
-        System.out.println(ndInput.data.nama + " masuk antrian");
-        if (isEmpty()) {
-            head = ndInput;
-            tail = ndInput;
+        if (!isFull()) {
+            NodeMahasiswa10 ndInput = new NodeMahasiswa10(input, null);
+            System.out.println(ndInput.data.nama + " masuk antrian");
+            if (isEmpty()) {
+                head = ndInput;
+                tail = ndInput;
+            } else {
+                tail.next = ndInput;
+                tail = ndInput;
+            }
         } else {
-            tail.next = ndInput;
-            tail = ndInput;
+            System.out.println("Antrian penuh");
         }
     }
 
@@ -41,7 +56,7 @@ public class Antrian {
             size++;
             tmp = tmp.next;
         }
-        System.out.println("Size: " + size);
+        // System.out.println("Size: " + size);
         return size;
     }
 
@@ -73,5 +88,10 @@ public class Antrian {
             System.out.println("nama\tnim\t\tkelas\tIPK");
             tail.data.tampilInformasi();
         }
+    }
+
+    public void kosongkanAntrian() {
+        head = tail = null;
+        System.out.println("Antrian telah kosong");
     }
 }

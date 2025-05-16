@@ -4,9 +4,13 @@ import java.util.Scanner;
 
 public class AntrianMain {
     public static void main(String[] args) {
-        Antrian antrian = new Antrian();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan batas maksimal antrian: ");
+        int batas = sc.nextInt();
+        sc.nextLine();
+
+        Antrian antrian = new Antrian(batas);
         while (true) {
-            Scanner sc = new Scanner(System.in);
             System.out.println("antrian layanan unit kemahasiswaan");
             System.out.println("1. menambah antrian");
             System.out.println("2. memanggil antrian");
@@ -14,6 +18,7 @@ public class AntrianMain {
             System.out.println("4. melihat antrian terakhir");
             System.out.println("5. jumlah mahasiswa yang masih mengantri");
             System.out.println("6. lihat semua antrian");
+            System.out.println("7. kosongkan antrian");
             System.out.println("0. keluar");
             System.out.println("-------------------");
             System.out.print("pilih menu: ");
@@ -52,6 +57,9 @@ public class AntrianMain {
                     break;
                 case 6:
                     antrian.print();
+                    break;
+                case 7:
+                    antrian.kosongkanAntrian();
                     break;
                 case 0:
                     System.out.println("Terima kasih");
