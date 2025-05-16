@@ -149,7 +149,7 @@ public class SingleLinkedList10 {
                 if ((tmp.data.nama.equalsIgnoreCase(key)) && (tmp == head)) {
                     removeFirst();
                     break;
-                } else if (tmp.data.nama.equalsIgnoreCase(key)) {
+                } else if (tmp.next.data.nama.equalsIgnoreCase(key)) {
                     tmp.next = tmp.next.next;
                     if (tmp.next == null) {
                         tail = tmp;
