@@ -5,13 +5,13 @@
 | Kelas      | TI - 1H                                           |
 | Repository | [link] (https://github.com/rhmau1/praktikum_alsd) |
 
-# 2.1.2 Percobaan
+# 2.1.1 Percobaan
 
 hasil percobaan dapat dilihat pada gambar di bawah ini:
 
 - ![Screenshot](../img/p12/1.png)
 
-# 2.1.3 Pertanyaan
+# 2.1.2 Pertanyaan
 
 1. Mengapa hasil compile kode program di baris pertama menghasilkan “Linked List Kosong”?
    - karena saat pertama kali kode dijalankan linked list masih belum ada datanya
