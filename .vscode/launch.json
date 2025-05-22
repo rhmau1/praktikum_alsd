@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DoubleLinkedListsMain",
+      "request": "launch",
+      "mainClass": "DoubleLinkedListsMain",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
       "name": "AntrianMain",
       "request": "launch",
       "mainClass": "pertemuan12.AntrianMain",
