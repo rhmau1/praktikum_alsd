@@ -35,7 +35,7 @@ hasil percobaan dapat dilihat pada gambar di bawah ini:
 
 hasil percobaan dapat dilihat pada gambar di bawah ini:
 
-- ![Screenshot](../img/p12/2.png)
+- ![Screenshot](../img/p13/2.png)
 
 # 12.3.3 Pertanyaan
 
