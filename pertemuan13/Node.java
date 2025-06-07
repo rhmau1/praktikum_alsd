@@ -1,3 +1,5 @@
+package pertemuan13;
+
 public class Node {
     Mahasiswa10 data;
     Node prev, next;

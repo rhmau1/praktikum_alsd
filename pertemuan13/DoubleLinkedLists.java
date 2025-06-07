@@ -1,4 +1,4 @@
-import pertemuan12.NodeMahasiswa10;
+package pertemuan13;
 
 public class DoubleLinkedLists {
     Node head, tail;

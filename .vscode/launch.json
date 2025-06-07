@@ -8,6 +8,20 @@
       "type": "java",
       "name": "DoubleLinkedListsMain",
       "request": "launch",
+      "mainClass": "pertemuan13.DoubleLinkedListsMain",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "BinaryTreeMain10",
+      "request": "launch",
+      "mainClass": "BinaryTreeMain10",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "DoubleLinkedListsMain",
+      "request": "launch",
       "mainClass": "DoubleLinkedListsMain",
       "projectName": "praktikum_alsd_ecf066cd"
     },
