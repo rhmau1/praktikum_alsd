@@ -9,6 +9,45 @@ public class BinaryTree10 {
         return root == null;
     }
 
+    Node10 addRekursif(Node10 root, Mahasiswa10 data) {
+        Node10 newNode = new Node10(data);
+        if (root == null) {
+            root = newNode;
+        } else if (newNode.data.ipk < root.data.ipk) {
+            root.left = addRekursif(root.left, data);
+        } else if (newNode.data.ipk >= root.data.ipk) {
+            root.right = addRekursif(root.right, data);
+        }
+        return root;
+    }
+
+    Node10 cariMinIPK() {
+        Node10 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current;
+    }
+
+    Node10 cariMaxIPK() {
+        Node10 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current;
+    }
+
+    void tampilMahasiswaIPKdiAtas(double ipk, Node10 node) {
+        if (node == null) {
+            return;
+        }
+        if (node.data.ipk > ipk) {
+            tampilMahasiswaIPKdiAtas(ipk, node.left);
+            node.data.tampilInformasi();
+        }
+        tampilMahasiswaIPKdiAtas(ipk, node.right);
+    }
+
     void add(Mahasiswa10 data) {
         Node10 newNode = new Node10(data);
         if (isEmpty()) {
@@ -149,7 +188,7 @@ public class BinaryTree10 {
                 }
             } else { // jika punya 2 anak
                 Node10 successor = getSuccessor(current);
-                System.out.println("jika 2 anak, current = ");
+                System.out.print("jika 2 anak, current = ");
                 successor.data.tampilInformasi();
                 if (current == root) {
                     root = successor;

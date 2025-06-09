@@ -12,7 +12,16 @@ public class BinaryTreeArrayMain10 {
         Mahasiswa10[] dataMhs = { mhs1, mhs2, mhs3, mhs4, mhs5, mhs6, mhs7, null, null, null };
         int idxLast = 6;
         bta.populateData(dataMhs, idxLast);
-        System.out.println("\nInorder Traversal Mahasiswa");
+        System.out.println("\nIn Order Traversal Mahasiswa");
         bta.traverseInOrder(0);
+
+        bta.add(new Mahasiswa10("244008", "Ghani", "A", 3.82));
+        bta.add(new Mahasiswa10("244009", "Hendra", "B", 3.46));
+        bta.add(new Mahasiswa10("244010", "Ikhsan", "C", 3.78));
+
+        System.out.println("\nIn Order Traversal setelah penambahan mahasiswa");
+        bta.traverseInOrder(0);
+        System.out.println("\nPre Order Traversal setelah penambahan mahasiswa");
+        bta.traversePreOrder(0);
     }
 }

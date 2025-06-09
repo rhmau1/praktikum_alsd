@@ -11,6 +11,23 @@ public class BinaryTreeArray10 {
         this.idxLast = idxLast;
     }
 
+    void add(Mahasiswa10 data) {
+        int i = 0;
+        while (i < dataMahasiswa.length && dataMahasiswa[i] != null) {
+            if (data.ipk < dataMahasiswa[i].ipk) {
+                i = 2 * i + 1;
+            } else {
+                i = 2 * i + 2;
+            }
+        }
+        if (i >= dataMahasiswa.length) {
+            System.out.println("\narray sudah penuh");
+            return;
+        }
+        dataMahasiswa[i] = data;
+        idxLast++;
+    }
+
     void traverseInOrder(int idxStart) {
         if (idxStart <= idxLast) {
             if (dataMahasiswa[idxStart] != null) {
@@ -18,6 +35,18 @@ public class BinaryTreeArray10 {
                 dataMahasiswa[idxStart].tampilInformasi();
                 traverseInOrder(2 * idxStart + 2);
             }
+        }
+    }
+
+    void traversePreOrder(int idxStart) {
+        if (idxStart >= dataMahasiswa.length) {
+            return;
+        }
+
+        if (dataMahasiswa[idxStart] != null) {
+            dataMahasiswa[idxStart].tampilInformasi();
+            traversePreOrder(2 * idxStart + 1);
+            traversePreOrder(2 * idxStart + 2);
         }
     }
 }
