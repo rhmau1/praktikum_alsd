@@ -63,12 +63,14 @@ public class BinaryTree10 {
                         parent.left = newNode;
                         return;
                     }
-                } else {
+                } else if (data.ipk > current.data.ipk) {
                     current = current.right;
                     if (current == null) {
                         parent.right = newNode;
                         return;
                     }
+                } else {
+                    break;
                 }
             }
         }

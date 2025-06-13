@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Sorting",
+      "request": "launch",
+      "mainClass": "Sorting",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "TreeSetDemo",
+      "request": "launch",
+      "mainClass": "TreeSetDemo",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "StackDemo",
+      "request": "launch",
+      "mainClass": "StackDemo",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
+      "name": "DemoArrayList",
+      "request": "launch",
+      "mainClass": "DemoArrayList",
+      "projectName": "praktikum_alsd_ecf066cd"
+    },
+    {
+      "type": "java",
       "name": "BinaryTreeArrayMain10",
       "request": "launch",
       "mainClass": "BinaryTreeArrayMain10",
